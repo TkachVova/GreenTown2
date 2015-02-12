@@ -1,0 +1,22 @@
+﻿@model GreenTown.Domain.Entities.House
+
+@{
+    ViewBag.Title = "List";
+}
+       
+
+<div id="infoList">
+     <div class="post">
+		<h2 class="title">House @Model.HouseID.ToString()</h2>
+		<div class="story">
+			 @if (Model.ImageData != null ) {
+         <img src="@Url.Action("GetImage", "Home", new { Model.HouseID })" width="500" height="332" alt="photo"/> 
+         }
+        <p>House address: @Model.Address</p>
+        <p>Amount of stores: @Model.AmountOfStores.ToString()</p>
+        <p>Square: @Model.Square.ToString() square meters</p>
+        <p>Description: @Model.Description</p>  
+        <p>Price: @Model.Price.ToString("c")</p>  
+		</div>
+	</div>
+</div>

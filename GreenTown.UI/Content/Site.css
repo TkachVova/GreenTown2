@@ -1,0 +1,266 @@
+﻿
+
+body 
+{
+	margin: 0;
+	padding: 0;
+	background: #749865 url(/Images/img01.gif) repeat-x;
+	font: normal small Arial, Helvetica, sans-serif;
+	line-height: 1.8em;
+	color: #838B91;
+}
+
+
+h1, h2, h3, h4, h5, h6 
+{
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #468259;
+}
+
+h2 
+{
+	padding-left: 20px;
+	background: url(/Images/img07.gif) no-repeat left center;
+	font-size: 22px;
+}
+
+
+
+p, ul 
+{
+	margin-top: 0;
+}
+
+
+
+a 
+{
+	background: url(/Images/img03.gif) repeat-x left bottom;
+	text-decoration: none;
+	color: #468259;
+}
+
+a:hover 
+{
+	background: none;
+	text-decoration: underline;
+}
+
+/* Wrapper */
+
+#wrapper 
+{
+	background: #FFFFFF url(/Images/img04.gif) repeat-x left bottom;
+}
+
+
+
+/* Header */
+
+#header 
+{
+	width: 754px;
+	height: 247px;
+	margin: auto;
+	margin-top: 60px;
+	padding: 13px 0 0 0;
+}
+
+#header h1 
+{
+    float: left;
+	width: 104px;
+	height: 110px;
+	padding: 104px 100px 0 20px;
+	background: url(/Images/img05.jpg) no-repeat;
+	line-height: 32px;
+	font-size: 30px;
+}
+
+#header h2 
+{
+	float: right;
+	width: 494px;
+	height: 34px;
+	padding: 180px 20px 0 0;
+	background: url(/Images/img06.jpg) no-repeat;
+	text-align: right;
+	letter-spacing: -1px;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+/* Content */
+
+#content 
+{
+	width: 750px;
+	margin: 0 auto;
+}
+
+/* Posts */
+
+#posts 
+{
+	float: right;
+	width: 400px;
+}
+
+.post 
+{
+	padding-bottom: 30px;
+}
+
+.story 
+{
+	padding: 15px 20px 0 20px;
+	background: url(/Images/img10.gif) repeat-x
+}
+
+
+#addiction .news 
+{
+    padding: 15px 20px 0 20px;
+}
+
+.meta
+{
+	padding: 5px 0 0 20px;
+	background: url(/Images/img03.gif) repeat-x;
+}
+
+.meta p 
+{
+	margin: 0;
+	line-height: normal;
+	font-size: smaller;
+}
+
+ul 
+{
+	list-style: url(/Images/img12.gif);
+}
+
+ul li 
+{
+}
+
+/* Links */
+
+#links 
+{
+	float: left;
+	width: 150px;
+}
+
+#links ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#links li ul 
+{
+	padding: 15px 20px 30px 20px;
+	background: url(/Images/img10.gif) repeat-x
+}
+
+#links li li 
+{
+	padding: 3px 0;
+	background: url(/Images/img03.gif) repeat-x left bottom;
+}
+
+#links li a 
+{
+	background: none;
+}
+
+#links li i 
+{
+	font-size: smaller;
+}
+
+/* Footer */
+
+#footer 
+{
+	padding: 40px 0 60px 0;
+	background: url(/Images/img08.gif) repeat-x;
+}
+
+#footer p 
+{
+	width: 200px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: #A6C09B;
+}
+
+#footer a 
+{
+	background: none;
+	font-weight: bold;
+	color: #A6C09B;
+}
+
+#add_and_fot
+{
+	float: right;
+	width: 200px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#add_and_foot #addiction
+{
+	margin: 0 auto;
+	height: 70%;
+}
+
+
+
+
+#add_and_foot #footer
+{
+	margin: 0 auto;
+	height: 30%;
+}
+
+
+
+#brand 
+{
+	margin: -35px auto 0 auto;
+	padding: 10px 0 0 35px;
+	background: url(/Images/img09.gif) no-repeat left top;
+	letter-spacing: -1px;
+	font-size: 24px;
+}
+
+#infoList 
+{
+    float: right;
+	width: 600px;
+}
+
+
+#infoList img 
+{
+    margin: 15px auto;
+    margin-left: 25px;
+    transition-property: width height;
+    transition-duration: 1s;
+}
+
+#infoList img:hover
+{  
+     transform:scale(1.5,1.5);
+     box-shadow: 10px 10px 5px #888888;
+}
+
+

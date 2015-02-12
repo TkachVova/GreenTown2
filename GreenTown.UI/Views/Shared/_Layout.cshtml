@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+
+<div id="header">
+	<h1>The Green Town</h1>
+	<h2>By Vladymyr Tkachenko</h2>
+</div>
+<!-- end #header -->
+<div id="wrapper">
+    <div id="content">
+	@RenderBody()
+		<div id="links">
+			    <h2>Menu</h2>
+					<ul>
+						<li><a href="~/Home/Index">Home</a></li>
+						<li><a href="~/Home/About">About town</a></li>
+						<li><a href="~/Home/Photo">Photo</a></li>
+						<li><a href="~/Home/Map">Map</a></li>
+						<li><a href="~/Home/SocialPrograms">Social programs</a></li>
+					</ul>
+		</div>
+		<!-- end #links -->
+		<div style="clear: both;">&nbsp;</div>
+    </div>
+<!-- end #content -->
+</div>
+</body>
+</html>
+
+
