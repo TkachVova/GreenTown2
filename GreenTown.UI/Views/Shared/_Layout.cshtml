@@ -25,6 +25,12 @@
 						<li><a href="~/Home/Photo">Photo</a></li>
 						<li><a href="~/Home/Map">Map</a></li>
 						<li><a href="~/Home/SocialPrograms">Social programs</a></li>
+                        <li onclick="javascript:Menu()" onload="javascript:CreateMenu()">Houses</li>
+                        <li>
+                            <ul id="menu_1" style="display:none;">
+                             
+                            </ul>
+                        </li>
 					</ul>
 		</div>
 		<!-- end #links -->
@@ -32,6 +38,46 @@
     </div>
 <!-- end #content -->
 </div>
+    <script type="text/javascript">
+        
+        function CreateLiTag(id) {
+            var li = document.createElement('div');
+            li.innerHTML = '<li><a href="/Home/List/' + id + '">House ' + id + '</a></li>';
+            
+            
+            return li.firstChild;
+        }
+
+        (function () {
+            var menu = document.getElementById('menu_1');
+
+            var houseArr = [1, 2, 3];
+            for (var i = 0; i < houseArr.length; i++) {
+                var li = CreateLiTag(houseArr[i]);
+
+                if (i == 0) {
+                    menu.appendChild(li);
+                }
+                else {
+                    menu.insertBefore(li, menu.firstChild);
+                }
+            }
+        })()
+
+        
+    </script>
+
+    <script type="text/javascript">
+            function Menu() {
+            var menu = document.getElementById('menu_1').style;
+            if (menu.display == 'none') {
+                menu.display = 'block';
+            }
+            else {
+                menu.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
 
