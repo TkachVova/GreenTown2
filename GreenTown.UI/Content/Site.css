@@ -264,3 +264,10 @@ ul li
 }
 
 
+
+#mess
+{
+    visibility: hidden; 
+    position: absolute;
+    color: #468259;
+}
